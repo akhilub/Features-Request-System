@@ -5,11 +5,13 @@ services:
   frontend:
     build: ./app
     ports:
-      - "3000:3000"
+      - "8080:8080"
+    links:
+      - backend
 
   backend:
     build: ./server  
     ports:
       - "8009:8009"
-    environment:
-      - PORT=8009
+    links:
+      - frontend

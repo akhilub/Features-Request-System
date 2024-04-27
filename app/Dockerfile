@@ -13,5 +13,8 @@ RUN npm install
 # Build production bundle
 RUN npm run build
 
+# Expose port
+EXPOSE 8080 
+
 # Start app
 CMD ["npm", "start"]  
