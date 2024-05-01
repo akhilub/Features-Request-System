@@ -14,4 +14,4 @@ RUN npm install
 EXPOSE 8009
 
 # Start server
-CMD ["npm", "start"]
+CMD ["npm", "run", "backend"]
