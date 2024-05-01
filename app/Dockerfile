@@ -4,14 +4,14 @@ FROM node:alpine
 # Set working directory
 WORKDIR /app
 
-# Copy app files
-COPY . .
+# Copy package.json and install dependencies
+COPY ../package.json .
 
 # Install dependencies
 RUN npm install
 
-# Build production bundle
-RUN npm run build
+
+COPY . .
 
 # Expose port
 EXPOSE 8080 

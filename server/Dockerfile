@@ -4,11 +4,14 @@ FROM node:alpine
 # Set working directory
 WORKDIR /server
 
-# Copy server files
-COPY . .
+
+COPY ../package.json .  
 
 # Install dependencies  
 RUN npm install
+
+# Copy server files
+COPY . .
 
 # Expose port
 EXPOSE 8009

@@ -2,16 +2,25 @@ version: "3"
 
 services:
 
-  frontend:
-    build: ./app
-    ports:
-      - "8080:8080"
-    links:
-      - backend
-
   backend:
-    build: ./server  
+    build:
+      context: ./server
+      dockerfile: Dockerfile
     ports:
       - "8009:8009"
-    links:
-      - frontend
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8009/health"]    
+    restart: always
+
+  frontend:
+    build: 
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080" 
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
+    depends_on:
+      - backend
+    restart: on-failure
+   
