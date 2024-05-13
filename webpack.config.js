@@ -12,11 +12,13 @@ module.exports = {
     },
     compress: true,
     port: 8080,
+    historyApiFallback: true //added this 13 May 2024
   },
   mode: 'development',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',  //added this 13 May 2024
   },
   module: {
     rules: [
