@@ -3,7 +3,10 @@ const path = require('path');
 module.exports = {
   entry: ['@babel/polyfill', './app/index.js'],
   devServer: {
-    allowedHosts: 'auto',
+    // allowedHosts: 'auto',
+    allowedHosts: [
+      '.onrender.com', // Allow all subdomains on render.com
+    ],
     static: {
       directory: path.join(__dirname, 'dist'),
     },
