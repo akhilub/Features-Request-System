@@ -20,8 +20,8 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    // publicPath: '/',  //added this 13 May 2024, 
-    publicPath: '/dist', //updated 11 June 2024
+    publicPath: '/',  //added this 13 May 2024, 
+    // publicPath: '/dist', //updated 11 June 2024
   },
   module: {
     rules: [
