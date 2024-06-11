@@ -4,6 +4,7 @@
   "description": "a debug assessment for candidates",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode production",
     "backend": "npx babel-node --presets @babel/preset-env ./server/CannyServer.js",
     "frontend": "webpack serve",
     "submit": "npm run zip && npm run upload",

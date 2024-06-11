@@ -14,11 +14,13 @@ module.exports = {
     port: 8080,
     historyApiFallback: true //added this 13 May 2024
   },
-  mode: 'development',
+  // mode: 'development',
+  mode: 'production', // added 11 June 2024
+
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',  //added this 13 May 2024
+    publicPath: '/app',  //added this 13 May 2024, updated 11 June 2024
   },
   module: {
     rules: [
