@@ -18,7 +18,7 @@ module.exports = {
   mode: 'production', // added 11 June 2024
 
   output: {
-    filename: 'main.js',
+    filename: 'main.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',  //added this 13 May 2024, 
     // publicPath: '/dist', //updated 11 June 2024
