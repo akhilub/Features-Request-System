@@ -8,6 +8,3 @@ const httpServer = new HTTPServer({
 });
 httpServer.start();
 console.log('Ready to receive requests');
-
-
-

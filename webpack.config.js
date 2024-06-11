@@ -12,16 +12,12 @@ module.exports = {
     },
     compress: true,
     port: 8080,
-    historyApiFallback: true //added this 13 May 2024
   },
-  // mode: 'development',
-  mode: 'production', // added 11 June 2024
-
+  mode: 'development',
   output: {
-    filename: 'main.[contenthash].js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',  //added this 13 May 2024, 
-    // publicPath: '/dist', //updated 11 June 2024
+    publicPath: '/',
   },
   module: {
     rules: [
