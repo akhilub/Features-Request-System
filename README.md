@@ -3,11 +3,11 @@
 A modern full stack web application to suggest new features to accommodate in existing business products based on user total votes and can be filtered based on old, new & top suggestions.
 
 
-  Part I : Backend Using Node.js With Express
-  Prat II: The server-side-rendered React Frontend
-  Part III: Dockerizing Front- & Backend
-  Part IV: Deploying Front- & Backend In The Cloud using AWS 
-  Part V: Automating The Build- And Deployment-Process using Git & Docker
+  - Part I : Backend Using Node.js With Express
+  - Part II: The server-side-rendered React Frontend
+  - Part III: Dockerizing Front- & Backend
+  - Part IV: Deployed Front- & Backend In The Cloud  
+  - Part V: Automating The Build- And Deployment-Process using Git & Docker
 
 I am trying to deploy both frontend and backend through one doocker-compose on AWS cloud with automated build to reflect the immediate changes pushed into the repo.
 
