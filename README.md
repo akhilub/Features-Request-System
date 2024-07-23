@@ -9,7 +9,8 @@ A modern full stack web application to suggest new features to accommodate in ex
   - Part IV: Deployed Front- & Backend In The Cloud  
   - Part V: Automating The Build- And Deployment-Process using Git & Docker
 
-I am trying to deploy both frontend and backend through one docker-compose on AWS cloud with automated build to reflect the immediate changes pushed into the repo.
+~~I am trying to deploy both frontend and backend through one docker-compose on AWS cloud with automated build to reflect the immediate changes pushed into the repo.~~
+Update : Deployed both frontend and backend to reflect the immediate changes pushed to repo with automatic build.
 
 ## Getting Started
 
